@@ -10,8 +10,8 @@ checkbox.addEventListener('change', onSwitchThemeHandler);
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'DARK') {
-    checkbox.setAttribute('checked', '');
     bodyRef.classList.add(theme.DARK);
+    checkbox.checked = true;
 }
 
 function onSwitchThemeHandler(e) {
